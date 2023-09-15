@@ -1,9 +1,9 @@
-import './App.css';
-
 function App() {
   return (
     <div className="App">
-      
+      <h1>
+        Исторические даты
+      </h1>
     </div>
   );
 }
