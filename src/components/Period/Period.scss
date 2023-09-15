@@ -1,0 +1,61 @@
+.period {
+  display: flex;
+  gap: 10%;
+  margin-top: 54px;
+
+  p {
+    margin: 0;
+
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+  }
+
+  .period__from {
+    color: $period-from-color-mobile;
+  }
+
+  .period__to {
+    color: $period-to-color;
+  }
+}
+
+@media (min-width: 320px) {
+  .period {
+    p {
+      font-size: 17.5vw;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .period {
+    justify-content: center;
+
+    p {
+      font-size: 96px;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .period {
+    p {
+      font-size: 14vw;
+    }
+  }
+}
+
+@media (min-width: 1340px) {
+  .period {
+    margin-top: 35px;
+    gap: 90px;
+    p {
+      font-size: 200px;
+    }
+
+    .period__from {
+      color: $period-from-color-desktop;
+    }
+  }
+}
