@@ -7,12 +7,14 @@ import "./styles/index.scss";
 function App() {
   return (
     <div className="App">
-      <h1>
-        Исторические даты
-      </h1>
-      <Period />
-      <Topics />
-      <Slider />
+      <div className="container">
+        <h1 className="main-title">
+          Исторические <span className="break-line">даты</span>
+        </h1>
+        <Period />
+        <Topics />
+        <Slider />
+      </div>
     </div>
   );
 }
