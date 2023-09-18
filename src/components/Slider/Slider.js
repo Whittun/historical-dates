@@ -6,37 +6,37 @@ function Slider() {
           <li className="slider__article-item">
             <p className="slider__year">2000</p>
             <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae sed minus dolorem facere. Quo accusantium quidem repellendus aut nemo quia obcaecati molestias atque voluptate laudantium!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
             </p>
           </li>
           <li className="slider__article-item">
             <p className="slider__year">2001</p>
             <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae sed minus dolorem facere. Quo accusantium quidem repellendus aut nemo quia obcaecati molestias atque voluptate laudantium!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
             </p>
           </li>
           <li className="slider__article-item">
             <p className="slider__year">2002</p>
             <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae sed minus dolorem facere. Quo accusantium quidem repellendus aut nemo quia obcaecati molestias atque voluptate laudantium!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
             </p>
           </li>
           <li className="slider__article-item">
             <p className="slider__year">2003</p>
             <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae sed minus dolorem facere. Quo accusantium quidem repellendus aut nemo quia obcaecati molestias atque voluptate laudantium!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
             </p>
           </li>
           <li className="slider__article-item">
             <p className="slider__year">2004</p>
             <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae sed minus dolorem facere. Quo accusantium quidem repellendus aut nemo quia obcaecati molestias atque voluptate laudantium!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
             </p>
           </li>
           <li className="slider__article-item">
             <p className="slider__year">2005</p>
             <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae sed minus dolorem facere. Quo accusantium quidem repellendus aut nemo quia obcaecati molestias atque voluptate laudantium!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
             </p>
           </li>
         </ul>
@@ -44,17 +44,19 @@ function Slider() {
         <button className="slider__article-control slider__article-control--next"></button>
       </div>
       <div className="slider__controls">
-        <p className="slider__number">
-          06/06
-        </p>
-        <ul className="slider__topic-switching-list">
-          <li className="slider__topic-switching-item">
-            <button className="slider__topic-switching-button"></button>
-          </li>
-          <li className="slider__topic-switching-item">
-            <button className="slider__topic-switching-button"></button>
-          </li>
-        </ul>
+        <div className="slider__topic-switching-wrapper">
+          <p className="slider__number">
+            06/06
+          </p>
+          <ul className="slider__topic-switching-list">
+            <li className="slider__topic-switching-item">
+              <button className="slider__topic-switching-button"></button>
+            </li>
+            <li className="slider__topic-switching-item">
+              <button className="slider__topic-switching-button slider__topic-switching-button--inactive"></button>
+            </li>
+          </ul>
+        </div>
         <ul className="slider__pagination-list">
           <li className="slider__pagination-item">
             <button className="slider__pagination-button"></button>
@@ -72,7 +74,7 @@ function Slider() {
             <button className="slider__pagination-button"></button>
           </li>
           <li className="slider__pagination-item">
-            <button className="slider__pagination-button"></button>
+            <button className="slider__pagination-button slider__pagination-button--active"></button>
           </li>
         </ul>
       </div>

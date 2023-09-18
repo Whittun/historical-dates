@@ -10,7 +10,6 @@ body {
   margin: 0;
 
   font-family: 'PT Sans', sans-serif;
-  /* font-family: 'Bebas Neue', sans-serif; */
 
   background-color: $background-color;
 }
@@ -24,10 +23,14 @@ body {
 }
 
 .container {
+  position: relative;
+
   max-width: 1440px;
   padding: 0 20px;
   padding-top: 58px;
   margin: 0 auto;
+
+  overflow: hidden;
 }
 
 .main-title {
@@ -87,7 +90,23 @@ body {
 @media (min-width: 1340px) {
   .container {
     padding: 0;
-    padding-left: 160px;
     padding-top: 170px;
+
+    border-left: 1px solid rgba($text-color, 0.1);
+    border-right: 1px solid rgba($text-color, 0.1);
+  }
+
+  .container::before {
+    content: "";
+
+    position: absolute;
+    left: calc(50% - 0.5px);
+    top: 0;
+
+    display: block;
+    width: 1px;
+    height: 100%;
+
+    background-color: rgba($text-color, 0.1);
   }
 }
