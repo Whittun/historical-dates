@@ -1,44 +1,16 @@
+import articles from "../../data/articles.json";
+
 function Slider() {
   return (
     <section className="slider">
       <div className="slider__article-wrapper">
         <ul className="slider__article-list">
-          <li className="slider__article-item">
-            <p className="slider__year">2000</p>
-            <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
-            </p>
-          </li>
-          <li className="slider__article-item">
-            <p className="slider__year">2001</p>
-            <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
-            </p>
-          </li>
-          <li className="slider__article-item">
-            <p className="slider__year">2002</p>
-            <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
-            </p>
-          </li>
-          <li className="slider__article-item">
-            <p className="slider__year">2003</p>
-            <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
-            </p>
-          </li>
-          <li className="slider__article-item">
-            <p className="slider__year">2004</p>
-            <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
-            </p>
-          </li>
-          <li className="slider__article-item">
-            <p className="slider__year">2005</p>
-            <p className="slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum ad ratione odio beatae
-            </p>
-          </li>
+          {articles[0].texts.map((item) =>
+            <li className="slider__article-item">
+              <p className="slider__year">{item.date}</p>
+              <p className="slider__text">{item.text}</p>
+            </li>
+          )}
         </ul>
         <button className="slider__article-control slider__article-control--back"></button>
         <button className="slider__article-control slider__article-control--next"></button>

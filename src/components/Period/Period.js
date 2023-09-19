@@ -1,11 +1,13 @@
+import articles from "../../data/articles.json";
+
 function Period() {
   return (
     <section className="period">
       <p className="period__from">
-        2000
+        {articles[0].from}
       </p>
       <p className="period__to">
-        2005
+        {articles[0].to}
       </p>
     </section>
   )
