@@ -1,4 +1,5 @@
 .slider {
+  padding-top: 15px;
   padding-bottom: 13px;
 
   @media (min-width: 500px) {
@@ -8,6 +9,8 @@
 
   .slider__article-wrapper {
     position: relative;
+
+    overflow: visible;
 
     @media (min-width: 500px) {
       order: 2;
@@ -22,48 +25,13 @@
     }
 
     @media (min-width: 1100px) {
-      padding: 0 78px;
-    }
-
-    .slider__article-control {
-      display: none;
-
-      @media (min-width: 1100px) {
-        position: absolute;
-        left: 0;
-        top: 44px;
-        bottom: 0;
-
-        display: block;
-        width: 40px;
-        height: 40px;
-        margin: auto 0;
-
-        background-color: #ffffff;
-        background-image: url("slider-control.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        border: none;
-        border-radius: 50%;
-        filter: drop-shadow(0px 0px 15px $shadow-color);
-
-        &:first-of-type {
-          transform: rotate(180deg);
-        }
-
-        &:last-of-type {
-          left: auto;
-          right: 0;
-        }
-      }
+      padding: 0 80px;
     }
 
     .slider__article-list {
       display: flex;
       margin-top: 3px;
-      margin-bottom: 50px;
       padding: 0;
-      gap: 25px;
 
       list-style: none;
 
@@ -75,28 +43,16 @@
         margin-top: 40px;
       }
 
-      @media (min-width: 1000px) {
-        gap: 80px;
-      }
-
-      @media (min-width: 1100px) {
-        overflow: hidden;
-      }
-
       .slider__article-item {
-        flex: 1 1 auto;
         min-width: 166px;
 
         @media (min-width: 600px) {
           min-width: 300px;
         }
 
-        @media (min-width: 1000px) {
-          min-width: 400px;
-        }
-
         .slider__year {
           margin-bottom: 12px;
+          margin-top: 0;
 
           font-family: 'Bebas Neue', sans-serif;
           font-size: 16px;
@@ -109,6 +65,7 @@
 
         .slider__text {
           margin-top: 0;
+          margin-bottom: 0;
 
           font-size: 14px;
           color: $text-color;
@@ -124,6 +81,57 @@
           }
         }
       }
+    }
+
+    .slider__article-control {
+      position: absolute;
+      top: 90px;
+      right: 20px;
+  
+      display: none;
+      width: 40px;
+      height: 40px;
+      margin: auto 0;
+  
+      background-color: #ffffff;
+      background-image: url("slider-control.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
+      border-radius: 50%;
+      filter: drop-shadow(0px 0px 15px $shadow-color);
+  
+      &::after {
+        display: none;
+      }
+      
+      &--back {
+        left: 20px;
+
+        transform: rotate(180deg);
+      }
+
+      @media (min-width: 900px) {
+        display: block;
+
+        right: 0;
+        
+        &--back {
+          left: 0;
+        }
+      }
+
+      @media (min-width: 1100px) {
+        right: 20px;
+        
+        &--back {
+          left: 20px;
+        }
+      }
+    }
+
+    .swiper-button-disabled {
+      display: none;
     }
   }
 
@@ -260,4 +268,3 @@
     }
   }
 }
-
