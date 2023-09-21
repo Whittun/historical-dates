@@ -8,7 +8,7 @@ import "./styles/index.scss";
 
 function App() {
 
-  const [topic, setTopic] = useState(0);
+  const [topic, setTopic] = useState(2);
 
   return (
     <div className="App">
