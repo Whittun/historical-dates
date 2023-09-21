@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/historical-dates/static/css/main.bbf78cc6.css",
+    "main.js": "/historical-dates/static/js/main.2fc7c428.js",
+    "index.html": "/historical-dates/index.html",
+    "static/media/slider-control.svg": "/historical-dates/static/media/slider-control.8d420fdc574ac9130087.svg",
+    "static/media/topics-control.svg": "/historical-dates/static/media/topics-control.dbc5e03d3a2e26be93a1.svg",
+    "main.bbf78cc6.css.map": "/historical-dates/static/css/main.bbf78cc6.css.map",
+    "main.2fc7c428.js.map": "/historical-dates/static/js/main.2fc7c428.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbf78cc6.css",
+    "static/js/main.2fc7c428.js"
+  ]
+}
